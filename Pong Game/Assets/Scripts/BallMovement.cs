@@ -36,7 +36,7 @@ public class BallMovement : MonoBehaviour
 
         Rigidbody2D rigidBody2D = this.gameObject.GetComponent<Rigidbody2D>();
 
-        rigidBody2D.velocity = dir * speed * Time.deltaTime;
+        rigidBody2D.velocity = dir * speed;
 
     }
 }

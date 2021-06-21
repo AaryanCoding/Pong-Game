@@ -693,6 +693,7 @@ GameObject:
   - component: {fileID: 513382377}
   - component: {fileID: 513382379}
   - component: {fileID: 513382376}
+  - component: {fileID: 513382380}
   m_Layer: 0
   m_Name: RacketsPlayer2
   m_TagString: Untagged
@@ -809,7 +810,20 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
+--- !u!114 &513382380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513382374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd571f16c47c8ec429fbf28d78b4352a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 100
 --- !u!1 &524736376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,7 +1452,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!23 &1423412709
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1526,7 +1540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9496cc7d3037adb43812b03429f7bb93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0
+  movementSpeed: 100
 --- !u!1 &1477228661
 GameObject:
   m_ObjectHideFlags: 0
