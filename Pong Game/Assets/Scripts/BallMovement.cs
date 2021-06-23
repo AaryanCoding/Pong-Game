@@ -22,11 +22,21 @@ public class BallMovement : MonoBehaviour
         if (isStartingPlayer1)
         {
             this.Moveball(new Vector2(-1, 0));
-        }else
+        } else
         {
             this.Moveball(new Vector2(1, 0));
         }
     }
+
+    public void IncreaseHitCounter()
+    {
+    if (this.hitCounter* this.extraSpeedPerHit <= this.maxExtraSpeed)
+        {
+            this.hitCounter++;
+        }
+
+    }
+    
 
     public void Moveball(Vector2 dir)
     {

@@ -23,5 +23,26 @@ public class CollisionController : MonoBehaviour
         {
             x = -1;
         }
+
+        float y = (ballPosition.y - racketPosition.y) / racketHeight;
+        this.ballMovement.IncreaseHitCounter();
+        this.ballMovement.Moveball(new Vector2(x, y)); 
+            
+     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.name == "RacketPlayer1" || collision.gameObject.name == "RacketPlayer2")
+        {
+            this.BounceFromRacket(collision);
+        } else if(collision.gameObject.name == "WallLeft")
+        {
+            Debug.Log("Collision with WallLeft");
+        }else if (collision.gameObject.name == "WallRight")
+        {
+            Debug.Log("Collision with WallRight");
+        }
     }
+
+
 }
